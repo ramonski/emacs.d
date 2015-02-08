@@ -4,4 +4,4 @@
 (global-whitespace-mode t)
 
 (setq whitespace-line-column 80)
-(setq whitespace-style '(face tabs trailing lines-tail))
+(setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab))

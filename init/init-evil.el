@@ -17,9 +17,6 @@
 (require 'evil-search-highlight-persist)
 (global-evil-search-highlight-persist t)
 
-; Navigation
-(require 'nav)
-
 ; Powerline
 (require 'powerline)
 (powerline-vim-theme)
@@ -35,6 +32,20 @@
 (require 'peepopen)
 (textmate-mode)
 (setq ns-pop-up-frames nil)
+
+; Tab support
+(global-evil-tabs-mode t)
+
+; evil org mode
+(require 'evil-org)
+
+; Surround mode
+(require 'evil-surround)
+(global-evil-surround-mode 1)
+
+; Navigation
+(require 'nav)
+(nav-disable-overeager-window-splitting)
 
 ; Key Bindings in Normal Mode
 (evil-define-key 'normal global-map

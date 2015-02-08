@@ -9,11 +9,12 @@
     init-bootstrap
     init-appearance
     init-shell
+    init-web
     init-evil
     init-defuns
-    init-keymaps
     init-flycheck
     init-whitespace
+    init-keymaps
 ))
 
 (require 'server)

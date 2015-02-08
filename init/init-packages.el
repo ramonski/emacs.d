@@ -17,16 +17,24 @@
     coffee-mode
     evil
     evil-leader
+    evil-nerd-commenter
+    evil-numbers
+    evil-org
     evil-search-highlight-persist
+    evil-surround
     evil-tabs
     evil-visualstar
+    emmet-mode
     flycheck
     helm
     magit
     nav
     peepopen
     powerline
+    rainbow-mode
+    session
     solarized-theme
+    smex
     textmate
     web-mode
     whitespace

@@ -8,6 +8,12 @@
     init-packages
     init-bootstrap
     init-appearance
+    init-shell
+    init-evil
+    init-defuns
+    init-keymaps
+    init-flycheck
+    init-whitespace
 ))
 
 (require 'server)

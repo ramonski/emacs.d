@@ -23,7 +23,6 @@
 
 ; Powerline
 (require 'powerline)
-(powerline-nano-theme)
 
 ; NERD Commenter
 (require 'evil-nerd-commenter)

@@ -12,6 +12,7 @@
 
 (defvar required-packages
   '(
+    ag
     autopair
     coffee-mode
     emmet-mode

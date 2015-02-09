@@ -3,9 +3,13 @@
 ; Enable Evil Mode
 (evil-mode 1)
 
+;; Don't wait for any other keys after escape is pressed.
+(setq evil-esc-delay 0)
+
 ; Comma is my leader
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
+(setq evil-leader/in-all-states 1)
 
 ; enable vim like surrounds
 (global-evil-surround-mode 1)
@@ -46,6 +50,7 @@
 ; Navigation
 (require 'nav)
 (nav-disable-overeager-window-splitting)
+(evil-set-initial-state 'nav-mode 'emacs)
 
 ; Key Bindings in Normal Mode
 (evil-define-key 'normal global-map

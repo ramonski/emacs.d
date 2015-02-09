@@ -23,7 +23,7 @@
 
 ; Powerline
 (require 'powerline)
-(powerline-vim-theme)
+(powerline-nano-theme)
 
 ; NERD Commenter
 (require 'evil-nerd-commenter)
@@ -51,6 +51,12 @@
 (require 'nav)
 (nav-disable-overeager-window-splitting)
 (evil-set-initial-state 'nav-mode 'emacs)
+
+; Key Bindings in Insert Mode
+(evil-define-key 'insert global-map
+  (kbd "M-c") 'cua-copy-region
+  (kbd "M-v") 'cua-paste
+)
 
 ; Key Bindings in Normal Mode
 (evil-define-key 'normal global-map
@@ -80,4 +86,5 @@
   "gg"  'writegood-grade-level
   "ge"  'writegood-reading-ease
   "m"   'writegood-reading-ease
+  "t"   'helm-cmd-t
 )

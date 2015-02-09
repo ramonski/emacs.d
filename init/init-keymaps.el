@@ -1,9 +1,12 @@
 (provide 'init-keymaps)
 
+; requirements for key bindings
+(require 'helm)
+
 ; Global Mappings
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-q") 'save-buffers-kill-emacs)
-(global-set-key (kbd "M-a") 'mark-whole-buffer)
+(global-set-key (kbd "M-x")       'helm-M-x)
+(global-set-key (kbd "M-q")       'save-buffers-kill-emacs)
+(global-set-key (kbd "M-a")       'mark-whole-buffer)
 (global-set-key (kbd "C-<left>")  'windmove-left)
 (global-set-key (kbd "C-<down>")  'windmove-down)
 (global-set-key (kbd "C-<up>")    'windmove-up)

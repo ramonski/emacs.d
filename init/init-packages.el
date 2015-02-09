@@ -12,9 +12,9 @@
 
 (defvar required-packages
   '(
-    auto-complete
     autopair
     coffee-mode
+    emmet-mode
     evil
     evil-leader
     evil-nerd-commenter
@@ -24,17 +24,18 @@
     evil-surround
     evil-tabs
     evil-visualstar
-    emmet-mode
     flycheck
     helm
+    helm-cmd-t
     magit
     nav
     peepopen
     powerline
     rainbow-mode
     session
-    solarized-theme
     smex
+    solarized-theme
+    smooth-scrolling
     textmate
     web-mode
     whitespace

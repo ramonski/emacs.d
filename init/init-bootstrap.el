@@ -55,7 +55,7 @@
 (recentf-mode 1)
 
 ; No Wrap
-(toggle-truncate-lines 1)
+(set-default 'truncate-lines t)
 
 ; Session mode on
 ;(desktop-save-mode 1)
@@ -68,6 +68,11 @@
 
 ; Set default tab char's display width to 4 spaces
 (setq-default tab-width 4)
+
+; Vim like smooth scrolling
+(setq scroll-margin 5
+scroll-conservatively 9999
+scroll-step 1)
 
 ; Mac Option Key Binding
 (setq mac-option-key-is-meta nil)

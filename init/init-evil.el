@@ -47,9 +47,13 @@
 (global-evil-surround-mode 1)
 
 ; Navigation
-(require 'nav)
-(nav-disable-overeager-window-splitting)
-(evil-set-initial-state 'nav-mode 'emacs)
+(require 'neotree)
+(add-hook 'neotree-mode-hook
+          (lambda ()
+            (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+            (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
 
 ; Key Bindings in Insert Mode
 (evil-define-key 'insert global-map
@@ -62,7 +66,7 @@
   (kbd "<f2>")         'save-buffer    ; save the current buffer
   (kbd "<f3>")         'toggle-truncate-lines
   (kbd "<f4>")         'delete-window
-  (kbd "C-<tab>")      'nav-toggle
+  (kbd "C-<tab>")      'neotree-toggle
   (kbd "C-<left>")     'windmove-left
   (kbd "C-<down>")     'windmove-down
   (kbd "C-<up>")       'windmove-up
@@ -72,6 +76,7 @@
   (kbd "M-t")          'elscreen-create
   (kbd "M-w")          'elscreen-kill
   (kbd "M-<return>")   'evil-search-highlight-persist-remove-all
+  (kbd "M-p")          'helm-cmd-t
 )
 
 ; Key Bindings with Leader Prefix

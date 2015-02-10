@@ -29,7 +29,7 @@
     helm
     helm-cmd-t
     magit
-    nav
+    neotree
     peepopen
     powerline
     rainbow-mode

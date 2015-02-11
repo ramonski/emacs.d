@@ -18,3 +18,10 @@
 (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+
+; customize mode line
+(require 'smart-mode-line)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
+(sml/apply-theme 'light)

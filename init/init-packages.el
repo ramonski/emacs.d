@@ -31,10 +31,10 @@
     magit
     neotree
     peepopen
-    powerline
     rainbow-mode
     session
     smex
+    smart-mode-line
     solarized-theme
     smooth-scrolling
     textmate

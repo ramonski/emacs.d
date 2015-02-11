@@ -21,9 +21,6 @@
 (require 'evil-search-highlight-persist)
 (global-evil-search-highlight-persist t)
 
-; Powerline
-(require 'powerline)
-
 ; NERD Commenter
 (require 'evil-nerd-commenter)
 (evilnc-default-hotkeys)

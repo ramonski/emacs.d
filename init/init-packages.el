@@ -14,6 +14,8 @@
   '(
     ag
     autopair
+    auto-highlight-symbol
+    base16-theme
     coffee-mode
     emmet-mode
     evil
@@ -28,6 +30,8 @@
     flycheck
     helm
     helm-cmd-t
+    helm-ls-git
+    jinja2-mode
     magit
     neotree
     peepopen
@@ -38,6 +42,7 @@
     solarized-theme
     smooth-scrolling
     textmate
+    vcl-mode
     web-mode
     whitespace
     writegood-mode

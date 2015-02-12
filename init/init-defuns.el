@@ -1,9 +1,11 @@
 (provide 'init-defuns)
 
+
 (defun format-json ()
   (interactive)
   (let ((cmd "python -mjson.tool"))
     (shell-command-on-region (region-beginning) (region-end) cmd nil t)))
+
 
 (defun insert-date (prefix)
     "Insert the current date. With prefix-argument, use ISO format. With

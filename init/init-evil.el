@@ -21,6 +21,9 @@
 (require 'evil-search-highlight-persist)
 (global-evil-search-highlight-persist t)
 
+(require 'auto-highlight-symbol)
+(global-auto-highlight-symbol-mode t)
+
 ; NERD Commenter
 (require 'evil-nerd-commenter)
 (evilnc-default-hotkeys)
@@ -45,6 +48,7 @@
 
 ; Navigation
 (require 'neotree)
+
 (add-hook 'neotree-mode-hook
   (lambda ()
     (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-stretch-toggle)
@@ -57,12 +61,6 @@
     (define-key evil-normal-state-local-map (kbd "u")   'neotree-select-up-node)
     (define-key evil-normal-state-local-map (kbd ".")   'neotree-hidden-file-toggle)
   )
-)
-
-; Key Bindings in Insert Mode
-(evil-define-key 'insert global-map
-  (kbd "M-c") 'cua-copy-region
-  (kbd "M-v") 'cua-paste
 )
 
 ; Key Bindings in Normal Mode
@@ -95,4 +93,13 @@
   "ge"  'writegood-reading-ease
   "m"   'writegood-reading-ease
   "t"   'helm-cmd-t
+  "fj"  'format-json
+  ;; auto-highlight-symbol ------------------------------------------------------
+  "hb" 'ahs-chrange-whole-buffer
+  "hd" 'ahs-chrange-display
+  "he" 'ahs-edit-mode
+  "hf" 'ahs-chrange-beginning-of-defun
+  "hh" 'auto-highlight-symbol-mode
+  "hn" 'ahs-forward
+  "hp" 'ahs-backward
 )

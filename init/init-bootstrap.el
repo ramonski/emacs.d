@@ -66,6 +66,8 @@
 ; Set default tab char's display width to 4 spaces
 (setq-default tab-width 4)
 
+(cua-selection-mode t)
+
 ; Vim like smooth scrolling
 (setq scroll-margin 5
 scroll-conservatively 9999

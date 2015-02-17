@@ -25,9 +25,6 @@
 ; YES/NO Handling with y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-; Cut/Copy/Paste Mode
-(cua-mode 1)
-
 ; Show matching parenthesis
 (show-paren-mode t)
 ; Highlight entire bracket expression

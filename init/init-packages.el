@@ -35,8 +35,9 @@
     magit
     neotree
     peepopen
+    python-mode
+    ipython
     rainbow-mode
-    session
     smex
     smart-mode-line
     solarized-theme

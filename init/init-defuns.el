@@ -17,3 +17,11 @@
                    ((equal prefix '(16)) "%A, %d. %B %Y")))
           (system-time-locale "de_DE"))
       (insert (format-time-string format))))
+
+
+(defun python-add-breakpoint ()
+  "Add a break point"
+  (interactive)
+  (newline-and-indent)
+  (insert "import ipdb; ipdb.set_trace()")
+  (highlight-lines-matching-regexp "^[ ]*import ipdb; ipdb.set_trace()"))

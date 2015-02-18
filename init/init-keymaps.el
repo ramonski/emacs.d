@@ -24,6 +24,10 @@
 (define-key evil-normal-state-map "e" 'ido-find-file)
 (define-key evil-normal-state-map (kbd "<tab>") 'indent-for-tab-command)
 
+; Python Mode
+(define-key evil-normal-state-map (kbd "C-c C-b") 'python-add-breakpoint)
+
+
 ; ESC always quits
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
 (define-key evil-visual-state-map [escape] 'keyboard-quit)

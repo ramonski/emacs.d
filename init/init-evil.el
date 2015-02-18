@@ -102,4 +102,5 @@
   "hh" 'auto-highlight-symbol-mode
   "hn" 'ahs-forward
   "hp" 'ahs-backward
+  ;; auto-highlight-symbol ------------------------------------------------------
 )

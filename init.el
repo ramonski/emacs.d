@@ -9,8 +9,8 @@
     init-bootstrap
     init-appearance
     init-web
-    init-evil
     init-defuns
+    init-evil
     init-flycheck
     init-whitespace
     init-keymaps

@@ -8,6 +8,7 @@
     init-packages
     init-bootstrap
     init-appearance
+    init-navtree
     init-web
     init-defuns
     init-evil

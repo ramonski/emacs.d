@@ -46,29 +46,12 @@
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
-; Navigation
-(require 'neotree)
-
-(add-hook 'neotree-mode-hook
-  (lambda ()
-    (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-stretch-toggle)
-    (define-key evil-normal-state-local-map (kbd "q")   'neotree-hide)
-    (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
-    (define-key evil-normal-state-local-map (kbd "|")   'neotree-enter-vertical-split)
-    (define-key evil-normal-state-local-map (kbd "-")   'neotree-enter-horizontal-split)
-    (define-key evil-normal-state-local-map (kbd "C")   'neotree-change-root)
-    (define-key evil-normal-state-local-map (kbd "r")   'neotree-refresh)
-    (define-key evil-normal-state-local-map (kbd "u")   'neotree-select-up-node)
-    (define-key evil-normal-state-local-map (kbd ".")   'neotree-hidden-file-toggle)
-  )
-)
-
 ; Key Bindings in Normal Mode
 (evil-define-key 'normal global-map
   (kbd "<f2>")         'save-buffer    ; save the current buffer
   (kbd "<f3>")         'toggle-truncate-lines
   (kbd "<f4>")         'delete-window
-  (kbd "C-<tab>")      'neotree-toggle
+  (kbd "C-<tab>")      'sr-speedbar-toggle
   (kbd "C-<left>")     'windmove-left
   (kbd "C-<down>")     'windmove-down
   (kbd "C-<up>")       'windmove-up
@@ -83,7 +66,8 @@
 
 ; Key Bindings with Leader Prefix
 (evil-leader/set-key
-  "e"   'find-file
+  ;"e"   'find-file
+  "e"   'dired
   "b"   'switch-to-buffer
   "k"   'kill-buffer
   "ws"  'delete-trailing-whitespace
@@ -102,5 +86,4 @@
   "hh" 'auto-highlight-symbol-mode
   "hn" 'ahs-forward
   "hp" 'ahs-backward
-  ;; auto-highlight-symbol ------------------------------------------------------
 )

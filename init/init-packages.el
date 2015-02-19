@@ -17,6 +17,7 @@
     auto-highlight-symbol
     base16-theme
     coffee-mode
+    dired+
     emmet-mode
     evil
     evil-leader
@@ -34,6 +35,7 @@
     jinja2-mode
     magit
     neotree
+    nginx-mode
     peepopen
     python-mode
     ipython
@@ -42,6 +44,7 @@
     smart-mode-line
     solarized-theme
     smooth-scrolling
+    sr-speedbar
     textmate
     vcl-mode
     web-mode

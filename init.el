@@ -10,7 +10,10 @@
     init-appearance
     init-navtree
     init-web
+    init-plone
+    init-python
     init-defuns
+    init-tabcompletion
     init-evil
     init-flycheck
     init-whitespace

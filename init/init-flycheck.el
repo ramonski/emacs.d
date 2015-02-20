@@ -6,7 +6,9 @@
 (add-hook 'coffee-mode-hook 'flycheck-mode)
 (add-hook 'emacs-lisp-mode-hook 'flycheck-mode)
 (add-hook 'lisp-interaction-mode-hook 'flycheck-mode)
+
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+(setq flycheck-highlighting-mode 'lines)
 (setq flycheck-indication-mode nil)
 
 (add-hook 'flycheck-error-list-mode-hook

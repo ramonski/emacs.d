@@ -1,8 +1,5 @@
 (provide 'init-keymaps)
 
-; requirements for key bindings
-(require 'helm)
-
 ; Global Mappings
 (global-set-key (kbd "M-x")       'helm-M-x)
 (global-set-key (kbd "M-q")       'save-buffers-kill-emacs)
@@ -18,16 +15,13 @@
 (global-set-key (kbd "<f2>")      'save-buffer)
 (global-set-key (kbd "<f3>")      'toggle-truncate-lines)
 (global-set-key (kbd "<f4>")      'delete-window)
+(global-set-key (kbd "<f8>")      'find-tag)
+(global-set-key (kbd "<f9>")      'pop-tag-mark)
 
 ; Normal Mode
 (define-key evil-normal-state-map "b" 'ido-switch-buffer)
 (define-key evil-normal-state-map "B" 'ibuffer)
 (define-key evil-normal-state-map "e" 'ido-find-file)
-(define-key evil-normal-state-map (kbd "<tab>") 'indent-for-tab-command)
-
-; Python Mode
-(define-key evil-normal-state-map (kbd "C-c C-b") 'python-add-breakpoint)
-
 
 ; ESC always quits
 (define-key evil-normal-state-map [escape] 'keyboard-quit)

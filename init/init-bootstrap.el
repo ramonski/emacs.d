@@ -22,6 +22,12 @@
 ; Quicker Response to Keystrokes
 (setq echo-keystrokes 0.1)
 
+; 80 columns width
+(setq fill-column 80)
+
+; auto read if the file changed on disk
+(global-auto-revert-mode)
+
 ; YES/NO Handling with y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
 

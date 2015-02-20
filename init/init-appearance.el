@@ -13,14 +13,9 @@
                `(font . ,font)))
 
 ; Remove scrollbars, menu bars, and toolbars
-(when (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+;(when (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (when (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
+; start in fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
-
-; customize mode line
-(require 'smart-mode-line)
-(setq sml/no-confirm-load-theme t)
-(sml/setup)
-(sml/apply-theme 'light)

@@ -6,8 +6,6 @@
 (require 'package)
 (add-to-list 'package-archives
      '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives
-     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
 (defvar required-packages
@@ -19,6 +17,7 @@
     coffee-mode
     dired+
     emmet-mode
+    ein
     evil
     evil-leader
     evil-nerd-commenter
@@ -33,12 +32,12 @@
     helm-cmd-t
     helm-ls-git
     jinja2-mode
+    jedi
+    jedi-direx
     magit
     neotree
     nginx-mode
-    peepopen
     python-mode
-    ipython
     rainbow-mode
     smex
     smart-mode-line

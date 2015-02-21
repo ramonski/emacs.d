@@ -17,6 +17,7 @@
 (global-set-key (kbd "<f4>")      'delete-window)
 (global-set-key (kbd "<f8>")      'find-tag)
 (global-set-key (kbd "<f9>")      'pop-tag-mark)
+(global-set-key (kbd "<tab>")     'indent-or-expand)
 
 ; Normal Mode
 (define-key evil-normal-state-map "b" 'ido-switch-buffer)

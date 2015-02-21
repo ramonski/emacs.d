@@ -32,9 +32,9 @@
 (require 'writegood-mode)
 
 ; PeepOpen
-(require 'peepopen)
-(textmate-mode)
-(setq ns-pop-up-frames nil)
+;(require 'peepopen)
+;(textmate-mode)
+;(setq ns-pop-up-frames nil)
 
 ; Tab support
 (global-evil-tabs-mode t)
@@ -62,6 +62,7 @@
   (kbd "M-w")          'elscreen-kill
   (kbd "M-<return>")   'evil-search-highlight-persist-remove-all
   (kbd "M-p")          'helm-cmd-t
+  (kbd "M-t")          'helm-etags-select
 )
 
 ; Key Bindings with Leader Prefix
@@ -71,7 +72,6 @@
   "b"   'switch-to-buffer
   "k"   'kill-buffer
   "ws"  'delete-trailing-whitespace
-  "p"   'peepopen-goto-file-gui
   "wg"  'writegood-mode
   "gg"  'writegood-grade-level
   "ge"  'writegood-reading-ease

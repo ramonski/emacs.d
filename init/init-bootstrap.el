@@ -79,11 +79,27 @@
 scroll-conservatively 9999
 scroll-step 1)
 
+; no large file warnings
+(setq large-file-warning-threshold nil)
+
 ; Mac Option Key Binding
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
+
+; expansion functions
+(setq hippie-expand-try-functions-list
+  '(try-complete-file-name-partially
+    try-complete-file-name
+    try-expand-all-abbrevs
+    try-expand-list
+    try-expand-line
+    try-expand-dabbrev
+    try-expand-dabbrev-all-buffers
+    try-expand-dabbrev-from-kill
+    try-complete-lisp-symbol-partially
+    try-complete-lisp-symbol))
 
 ;; Temp Files
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))

@@ -6,3 +6,5 @@ ido.last
 auto-save-list
 sessions
 request
+.python-environments
+ac-comphist.dat

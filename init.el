@@ -19,6 +19,7 @@
     init-whitespace
     init-keymaps
     init-desktop
+    init-modeline
 ))
 
 (require 'server)

@@ -1,15 +1,17 @@
 (provide 'init-evil)
 
 ; Enable Evil Mode
+(require 'evil)
 (evil-mode 1)
 
-;; Don't wait for any other keys after escape is pressed.
-(setq evil-esc-delay 0)
-
 ; Comma is my leader
+(require 'evil-leader)
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
 (setq evil-leader/in-all-states 1)
+
+; Don't wait for any other keys after escape is pressed.
+(setq evil-esc-delay 0)
 
 ; enable vim like surrounds
 (global-evil-surround-mode 1)
@@ -30,11 +32,6 @@
 
 ; Writegood mode
 (require 'writegood-mode)
-
-; PeepOpen
-;(require 'peepopen)
-;(textmate-mode)
-;(setq ns-pop-up-frames nil)
 
 ; Tab support
 (global-evil-tabs-mode t)
@@ -62,7 +59,9 @@
   (kbd "M-w")          'elscreen-kill
   (kbd "M-<return>")   'evil-search-highlight-persist-remove-all
   (kbd "M-p")          'helm-cmd-t
-  (kbd "M-t")          'helm-etags-select
+  (kbd "b")            'ido-switch-buffer
+  (kbd "B")            'ibuffer
+  (kbd "e")            'ido-find-file
 )
 
 ; Key Bindings with Leader Prefix
@@ -86,4 +85,17 @@
   "hh" 'auto-highlight-symbol-mode
   "hn" 'ahs-forward
   "hp" 'ahs-backward
+  ;; nerd commenter ------------------------------------------------------
+  "cc" 'comment-or-uncomment-region
+  "cu" 'uncomment-region
 )
+
+; ESC always quits
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+(global-set-key [escape] 'keyboard-quit)

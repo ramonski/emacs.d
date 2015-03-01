@@ -48,7 +48,10 @@
   (kbd "<f2>")         'save-buffer    ; save the current buffer
   (kbd "<f3>")         'toggle-truncate-lines
   (kbd "<f4>")         'delete-window
-  (kbd "C-<tab>")      'sr-speedbar-toggle
+  (kbd "C-S-a")        'evil-numbers/inc-at-pt
+  (kbd "C-S-x")        'evil-numbers/dec-at-pt
+  (kbd "C-<tab>")      'neotree-toggle
+  ;(kbd "C-<tab>")      'sr-speedbar-toggle
   (kbd "C-<left>")     'windmove-left
   (kbd "C-<down>")     'windmove-down
   (kbd "C-<up>")       'windmove-up

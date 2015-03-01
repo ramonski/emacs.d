@@ -32,6 +32,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ; Show matching parenthesis
+(require 'paren)
 (show-paren-mode t)
 ; Highlight entire bracket expression
 (setq show-paren-style 'expression)

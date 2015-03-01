@@ -27,6 +27,7 @@
     evil-surround
     evil-tabs
     evil-visualstar
+    find-file-in-project
     flycheck
     helm
     helm-cmd-t
@@ -35,9 +36,14 @@
     jedi
     jedi-direx
     magit
+    markdown-mode
+    markdown-mode+
+    markdown-toc
     neotree
     nginx-mode
     python-mode
+    projectile
+    popwin
     rainbow-mode
     smex
     smart-mode-line

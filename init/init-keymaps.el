@@ -2,6 +2,7 @@
 
 ; Global Key Mappings
 (global-set-key (kbd "M-x")       'helm-M-x)
+(global-set-key (kbd "C-x C-f")   'helm-find-files)
 (global-set-key (kbd "M-q")       'save-buffers-kill-emacs)
 (global-set-key (kbd "M-a")       'mark-whole-buffer)
 (global-set-key (kbd "M-c")       'cua-copy-region)
@@ -10,8 +11,8 @@
 (global-set-key (kbd "C-<down>")  'windmove-down)
 (global-set-key (kbd "C-<up>")    'windmove-up)
 (global-set-key (kbd "C-<right>") 'windmove-right)
-;(global-set-key (kbd "C-<tab>")   'neotree-toggle)
-(global-set-key (kbd "C-<tab>")   'sr-speedbar-toggle)
+(global-set-key (kbd "C-<tab>")   'neotree-toggle)
+;(global-set-key (kbd "C-<tab>")   'sr-speedbar-toggle)
 (global-set-key (kbd "<f2>")      'save-buffer)
 (global-set-key (kbd "<f3>")      'toggle-truncate-lines)
 (global-set-key (kbd "<f4>")      'delete-window)

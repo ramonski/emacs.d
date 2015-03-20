@@ -62,16 +62,18 @@
   (kbd "M-w")          'elscreen-kill
   (kbd "M-<return>")   'evil-search-highlight-persist-remove-all
   (kbd "M-p")          'helm-cmd-t
-  (kbd "b")            'ido-switch-buffer
-  (kbd "B")            'ibuffer
-  (kbd "e")            'ido-find-file
+  ;(kbd "b")            'ido-switch-buffer
+  ;(kbd "B")            'ibuffer
+  ;(kbd "e")            'ido-find-file
 )
 
 ; Key Bindings with Leader Prefix
 (evil-leader/set-key
   ;"e"   'find-file
+  "b"   'ido-switch-buffer
+  "B"   'ibuffer
   "e"   'dired
-  "b"   'switch-to-buffer
+  ;"b"   'switch-to-buffer
   "k"   'kill-buffer
   "ws"  'delete-trailing-whitespace
   "wg"  'writegood-mode

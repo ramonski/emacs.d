@@ -4,10 +4,11 @@
 (require 'solarized)
 (if window-system
     (load-theme 'solarized-light t)
+    ;(load-theme 'zenburn t)
   (load-theme 'wombat t))
 
 ; Font
-(let ((font (if (featurep 'ns) "Menlo-15" "Menlo-11")))
+(let ((font (if (featurep 'ns) "Menlo-15" "Menlo-15")))
   (set-frame-font font)
   (add-to-list 'default-frame-alist
                `(font . ,font)))
@@ -18,4 +19,4 @@
 (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ; start in fullscreen
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+; (add-to-list 'default-frame-alist '(fullscreen . maximized))

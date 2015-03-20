@@ -41,6 +41,12 @@
 (require 'evil)
 (require 'projectile)
 
+; https://github.com/m2ym/popwin-el
+;; (require 'popwin)
+;; (popwin-mode 1)
+
+(setq neo-smart-open t)
+
 ; projectile
 (projectile-global-mode)
 

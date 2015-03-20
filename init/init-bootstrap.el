@@ -13,6 +13,14 @@
 ; No Scratch Message
 (setq initial-scratch-message nil)
 
+; Move to trash when deleting stuff
+(setq delete-by-moving-to-trash t
+       trash-directory "~/.Trash/emacs")
+
+; Enable Clipboard
+(setq x-select-enable-clipboard t)
+(cua-selection-mode t)
+
 ; No Bell
 (setq visible-bell t)
 
@@ -73,12 +81,15 @@
 ; Set default tab char's display width to 4 spaces
 (setq-default tab-width 4)
 
-(cua-selection-mode t)
-
-; Vim like smooth scrolling
-(setq scroll-margin 5
-scroll-conservatively 9999
-scroll-step 1)
+(require 'ido)
+(require 'ffap)
+(ido-mode 1); enable ido-mode
+; use ido-mode everywhere, in buffers and for finding files
+(ido-everywhere t)
+(setq ido-enable-flex-matching t); flexibly match names via fuzzy matching
+(setq ido-use-filename-at-point 'guess); for find-file-at-point
+(setq ido-use-url-at-point t); look for URLs at point
+(setq ffap-require-prefix t); get find-file-at-point with C-u C-x C-f
 
 ; no large file warnings
 (setq large-file-warning-threshold nil)

@@ -19,4 +19,4 @@
 ; using flake8 - config in ~/.config/flake8
 ; pip install flake8
 ; http://flake8.readthedocs.org/en/latest/config.html
-(add-hook 'python-mode-hook 'flycheck-mode)
+;(add-hook 'python-mode-hook 'flycheck-mode)

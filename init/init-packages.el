@@ -11,13 +11,15 @@
 (defvar required-packages
   '(
     ag
-    autopair
+    auctex
     auto-highlight-symbol
+    autopair
     base16-theme
     coffee-mode
+    csv-mode
     dired+
-    emmet-mode
     ein
+    emmet-mode
     evil
     evil-leader
     evil-nerd-commenter
@@ -32,23 +34,23 @@
     helm
     helm-cmd-t
     helm-ls-git
-    jinja2-mode
     jedi
     jedi-direx
+    jinja2-mode
     magit
     markdown-mode
     markdown-mode+
     markdown-toc
     neotree
     nginx-mode
-    python-mode
+    php-mode
     projectile
-    popwin
+    python-mode
     rainbow-mode
-    smex
     smart-mode-line
-    solarized-theme
+    smex
     smooth-scrolling
+    solarized-theme
     sr-speedbar
     textmate
     vcl-mode

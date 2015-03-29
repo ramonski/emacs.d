@@ -15,7 +15,7 @@
 
 ; Move to trash when deleting stuff
 (setq delete-by-moving-to-trash t
-       trash-directory "~/.Trash/emacs")
+       trash-directory "~/.Trash")
 
 ; Enable Clipboard
 (setq x-select-enable-clipboard t)

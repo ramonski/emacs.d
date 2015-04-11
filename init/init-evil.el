@@ -36,9 +36,6 @@
 ; Tab support
 (global-evil-tabs-mode t)
 
-; evil org mode
-(require 'evil-org)
-
 ; Surround mode
 (require 'evil-surround)
 (global-evil-surround-mode 1)
@@ -51,7 +48,6 @@
   (kbd "C-S-a")        'evil-numbers/inc-at-pt
   (kbd "C-S-x")        'evil-numbers/dec-at-pt
   (kbd "C-<tab>")      'neotree-toggle
-  ;(kbd "C-<tab>")      'sr-speedbar-toggle
   (kbd "C-<left>")     'windmove-left
   (kbd "C-<down>")     'windmove-down
   (kbd "C-<up>")       'windmove-up
@@ -62,18 +58,12 @@
   (kbd "M-w")          'elscreen-kill
   (kbd "M-<return>")   'evil-search-highlight-persist-remove-all
   (kbd "M-p")          'helm-cmd-t
-  ;(kbd "b")            'ido-switch-buffer
-  ;(kbd "B")            'ibuffer
-  ;(kbd "e")            'ido-find-file
 )
 
 ; Key Bindings with Leader Prefix
 (evil-leader/set-key
-  ;"e"   'find-file
   "b"   'ido-switch-buffer
-  "B"   'ibuffer
   "e"   'dired
-  ;"b"   'switch-to-buffer
   "k"   'kill-buffer
   "ws"  'delete-trailing-whitespace
   "wg"  'writegood-mode

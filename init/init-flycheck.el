@@ -15,8 +15,3 @@
 
 (add-hook 'flycheck-error-list-mode-hook
           '(lambda () (evil-emacs-state 1)))
-
-; using flake8 - config in ~/.config/flake8
-; pip install flake8
-; http://flake8.readthedocs.org/en/latest/config.html
-;(add-hook 'python-mode-hook 'flycheck-mode)

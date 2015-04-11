@@ -18,13 +18,10 @@
     coffee-mode
     csv-mode
     dired+
-    ein
-    emmet-mode
     evil
     evil-leader
     evil-nerd-commenter
     evil-numbers
-    evil-org
     evil-search-highlight-persist
     evil-surround
     evil-tabs
@@ -34,24 +31,20 @@
     helm
     helm-cmd-t
     helm-ls-git
-    jedi
-    jedi-direx
     jinja2-mode
+    latex-preview-pane
     magit
     markdown-mode
     markdown-mode+
     markdown-toc
     neotree
     nginx-mode
-    php-mode
     projectile
     python-mode
     rainbow-mode
     smart-mode-line
-    smex
     smooth-scrolling
     solarized-theme
-    sr-speedbar
     textmate
     vcl-mode
     web-mode

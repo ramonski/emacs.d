@@ -69,12 +69,6 @@
 ; No Wrap
 (set-default 'truncate-lines t)
 
-; Session mode on
-;(desktop-save-mode 1)
-
-; make tab key do indent first then completion.
-(setq-default tab-always-indent 'complete)
-
 ; Never ever use Tabs
 (setq-default indent-tabs-mode nil)
 
@@ -99,19 +93,6 @@
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
-
-; expansion functions
-(setq hippie-expand-try-functions-list
-  '(try-complete-file-name-partially
-    try-complete-file-name
-    try-expand-all-abbrevs
-    try-expand-list
-    try-expand-line
-    try-expand-dabbrev
-    try-expand-dabbrev-all-buffers
-    try-expand-dabbrev-from-kill
-    try-complete-lisp-symbol-partially
-    try-complete-lisp-symbol))
 
 ;; Temp Files
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))

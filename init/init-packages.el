@@ -50,6 +50,7 @@
     web-mode
     whitespace
     writegood-mode
+    yasnippet
     yaml-mode
   ) "a list of packages to ensure are installed at launch.")
 

@@ -18,7 +18,6 @@
     init-flycheck
     init-whitespace
     init-keymaps
-    init-desktop
     init-tex
     init-modeline
 ))

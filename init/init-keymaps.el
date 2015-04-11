@@ -18,6 +18,3 @@
 (global-set-key (kbd "<f8>")      'find-tag)
 (global-set-key (kbd "<f9>")      'pop-tag-mark)
 (global-set-key (kbd "<f10>")     'helm-etags-select)
-
-(define-key read-expression-map [(tab)] 'hippie-expand)
-(global-set-key (kbd "TAB") 'fancy-tab);(global-set-key (kbd "<tab>")     'indent-or-expand)
